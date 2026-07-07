@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac</title>
+</head>
+
+<body>
+
+    <br>
+    <table border="1" cellpadding="10" cellspacing="0" width="60%" align="center">
+        <tr bgcolor="#D3D3D3">
+            <th colspan="3">Inscrição para Curso</th>
+        </tr>
+        <tr>
+            <td colspan="3" align="center"><img src="../atividades/senac.jpg" alt="Logo Senac"
+                    height="170"><br><strong>Preencha os dados abaixo para realizar sua Inscrição</strong></td>
+        </tr>
+        <tr bgcolor="#D3D3D3">
+            <th colspan="2">Dados Pessoais </th>
+        </tr>
+        <tr>
+            <td>Nome Completo:</td>
+            <td><label for="nome"></label><input type="text" name="nome" id="nome" placeholder="Digite seu nome Completo"></td>
+        </tr>
+        <tr>
+            <td>Data de Nascimento:</td>
+            <td><label for="nascimento"></label><input type="date" name="nascimento" id="nascimento"></td>
+        </tr>
+        <tr>
+            <td>CPF:</td>
+            <td><label for="cpf"></label><input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" required></td>
+        </tr>
+        <tr bgcolor="#D3D3D3">
+            <th colspan="2">Dados de Contato</th>
+        </tr>
+        <tr>
+            <td>E-mail:</td>
+            <td><label for="email"></label><input type="email" id="email" name="email" placeholder="Seuemail@exemplo.com"></td>
+        </tr>
+        <tr>
+            <td>Telefone:</td>
+            <td><label for="telefone"></label><input type="tel" name="telefone" id="telefone" placeholder="(11) 99999-9999" required></td>
+        </tr>
+        <tr bgcolor="#D3D3D3">
+            <th colspan="2">Dados do Curso</th>
+        </tr>
+        <tr>
+            <td>Curso Desejado:</td>
+            <td><select name="curso" id="curso">
+            <option value="Selecione um Curso">Selecione um Curso</option>
+            <option value="html">HTML5</option>
+            <option value="css">CSS3</option>
+            <option value="javascript">JavaScript</option></td>
+        </select>
+        </tr>
+        <tr>
+            <td>Periodo:</td>
+            <td><input type="radio" name="periodo" id="manha" value="manha">
+        <label for="manha">Manhã</label><br>
+        <input type="radio" name="periodo" id="tarde" value="tarde">
+        <label for="tarde">Tarde</label><br>
+        <input type="radio" name="periodo" id="noite" value="noite">
+        <label for="noite">Noite</label></td>
+        </tr>
+        <tr>
+            <td>Areas de Interesses</td>
+            <td><input type="checkbox" name="interesses" id="Front-end" value="Front-end">
+        <label for="Front-end">Front-end</label><br>
+        <input type="checkbox" name="interesses" id="Back-end" value="Back-end">
+        <label for="Back-end">Back-end</label><br>
+        <input type="checkbox" name="interesses" id="Designer" value="Designer">
+        <label for="Designer">Designer</label><br>
+        <input type="checkbox" name="interesses" id="Banco de Dados" value="Banco de Dados">
+        <label for="Banco de Dados">Banco de Dados</label></td>
+        </tr>
+        <TR bgcolor="#D3D3D3">
+            <th colspan="2">Dados De Acesso</th>
+        </TR>
+        <tr>
+            <td colspan="2"> <fieldset>
+            <legend>Dados de acesso</legend>
+            <label for="Usuario">Usuario:</label>
+            <input type="text" name="Usuario" id="Usuario" placeholder="Digite um Usuario" required>
+            <br><br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" minlength="6" placeholder="Minimo 6 caracteres" required>
+        </fieldset></td>
+        </tr>
+        <tr bgcolor="#D3D3D3">
+            <th colspan="2">Observações</th>
+        </tr>
+        <tr>
+            <td><label for="observacao">Observacao:</label>
+            <td><textarea name="observacao" id="observacao" rows="5" cols="40" placeholder="Digite alguma observacao"></textarea></td>            
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><button type="submit">Enviar Inscrição</button> <button type="reset">Limpar Formulário</button></td>
+            
+        </tr>
+
+
+</body>
+
+</html>
